@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div data-tabs class="js">
+      <ul class="tabs__list" role="tablist">
+        <li class="tabs__tab" role="presentation">
+          <button class="tabs__tab-btn" type="button" role="tab">
+            Tab 1
+          </button>
+        </li>
+        <li class="tabs__tab" role="presentation">
+          <button class="tabs__tab-btn" type="button" role="tab">
+            Tab 2
+          </button>
+        </li>
+        <li class="tabs__tab" role="presentation">
+          <button class="tabs__tab-btn" type="button" role="tab">
+            Tab 3
+          </button>
+        </li>
+      </ul>
+      <div class="tabs__content">
+        <div class="tabs__pane" role="tabpanel">
+          Content for tab 1
+        </div>
+        <div class="tabs__pane" role="tabpanel">
+          Content for tab 2
+        </div>
+        <div class="tabs__pane" role="tabpanel">
+          Content for tab 3
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../node_modules/@nice-digital/design-system/dist/javascripts/nice.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../node_modules/@nice-digital/design-system/dist/stylesheets/nice.css"
+    />
+    <script>
+      var tabbyTabs = new nice.Tabs("[data-tabs");
+    </script>
+  </body>
+</html>
